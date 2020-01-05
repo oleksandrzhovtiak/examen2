@@ -1,0 +1,29 @@
+.footer{
+    background: url('../images/bg-footer.jpg');
+    background-size: cover;
+    &__copyright{
+        color: #fff;
+    }
+   
+&__menu{
+    @include size(20px, 20px);
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 30px; 
+
+}
+
+}
+
+.map{
+	width: 100%;
+	height: 500px;
+	
+}
+
+.social-img {
+    width: 20px;
+    height: 20px;
+    margin: 15%;}
+
+

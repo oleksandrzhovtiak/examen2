@@ -1,0 +1,122 @@
+section{
+	overflow-x:hidden;
+}
+span{
+	display: none;
+}
+.header {
+	background: url('../images/bg-header.jpg') no-repeat top;
+	background-size: cover;
+	height: 100vh;
+    position: relative;
+	color: #fff;
+	&__teatle{
+		text-align: center; 
+		margin-top: 230px;
+		font-size: 80px;
+	}
+	&__teatle2{
+		text-align: center; 
+		margin-top: 30px;
+		letter-spacing: 10px;
+		font-weight: normal;
+
+	}
+	@media (max-width:$mobile-small) and (max-width:$mobile-medium){
+	max-width: 100%;
+		overflow-x: hidden;
+	}
+   }
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo {
+	margin-top: 25px;
+	&:hover{
+	transform: scale(1.2);
+	}
+}
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 10px;
+
+&__item {
+	margin: 0 40px;
+	list-style-type: circle;
+	
+}
+&__item:hover {
+	list-style-type: disc;
+}
+
+}
+.menu__link {
+	color: #fff;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: relative;
+	font-family: 'Gotham';	
+}
+.social__menu {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+	margin-right: 20px;
+	&:hover{
+	background: blue;
+} 
+	.social-img{
+		width: 20px;
+		height: 20px;
+		margin: 15%;
+	}
+}
+.scroll-down{
+    @include size (40px);
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 30px;
+    position: absolute;
+    bottom: 6%;
+	left: 50%;
+	
+	.down{
+		@include size (10px);
+		margin: 38%;
+	}  
+}
+
+.fixed-nav {
+	position: fixed;
+	top: 50%;
+	right: 25px;
+	transform: translateY(-50%) ;
+	z-index: 9;
+
+}
+
+.fixed-nav a {
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, .3);
+	position: relative;
+	text-decoration: none;
+	margin-bottom: 10px;
+	transition: all .3s;
+}
+
+.fixed-nav a:hover, .fixed-nav a:active {
+	background: #fff;
+	color: #fff;
+}
